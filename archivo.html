@@ -6,18 +6,24 @@
 </head>
 <body>
 <h1>Indice Masa Corporal</h1>
-	<table>
+
+	<form onsubmit="return false">
+		<table>
 		<tr>
 			<td><label for="peso">Ingresar peso:</label></td>
-			<td><input type="text" id="peso"></td>
+			<td><input type="number" id="peso" required=""></td>
 		</tr>
 		<tr>
 			<td><label for="talla">Ingresar talla:</label></td>
-			<td><input id="talla" type="text"></td>
+			<td><input id="talla" type="number" required=""></td>
 		</tr>
 	</table>	
 	
 	<button onclick="calcularMasa();">Calcular</button>
+	</form>
+	
+	
+
 </body>
 <script src="js/archivo.js"></script>
 </html>

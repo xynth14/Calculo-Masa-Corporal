@@ -1,5 +1,12 @@
 function calcularMasa(){
-var peso = document.getElementById('peso').value;
-var talla = document.getElementById('talla').value;
-	return alert("Indice Masa Corporal: "+(peso/Math.pow(talla,2)).toFixed(2));
+
+	var peso = parseFloat(document.getElementById("peso").value);
+	var estatura = parseFloat(document.getElementById("talla").value);
+if(!isNaN(peso) && !isNaN(estatura)){
+	calculo = peso / (estatura * estatura);
+	alert("Indice Masa Corporal: "+calculo.toFixed(2));
+
+}
+
+	
 }
